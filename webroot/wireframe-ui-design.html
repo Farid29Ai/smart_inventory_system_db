@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Inventory Full UI Wireframe</title>
+    <style>
+        :root {
+            --bg: #020617;
+            --panel: rgba(15, 23, 42, 0.88);
+            --border: rgba(148, 163, 184, 0.24);
+            --text: #ffffff;
+            --muted: #cbd5e1;
+            --cyan: #22d3ee;
+            --blue: #3b82f6;
+            --purple: #8b5cf6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 12% 8%, rgba(59, 130, 246, 0.18), transparent 28%),
+                linear-gradient(135deg, #020617, #0f172a 52%, #111827);
+            color: var(--text);
+            font-family: Inter, "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            padding: 28px;
+        }
+
+        .wireframe-shell {
+            margin: 0 auto;
+            max-width: 1480px;
+        }
+
+        .topbar {
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 4vw, 56px);
+            line-height: 1;
+            margin: 0 0 8px;
+        }
+
+        p {
+            color: var(--muted);
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .badge {
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            border-radius: 999px;
+            box-shadow: 0 18px 42px rgba(59, 130, 246, 0.28);
+            color: #fff;
+            font-weight: 900;
+            padding: 14px 22px;
+            white-space: nowrap;
+        }
+
+        .viewer {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+            overflow: auto;
+            padding: 18px;
+        }
+
+        .viewer img {
+            display: block;
+            height: auto;
+            min-width: 1180px;
+            width: 100%;
+        }
+
+        .section-map {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            margin: 24px 0;
+        }
+
+        .section-map article {
+            background: rgba(15, 23, 42, 0.74);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 18px;
+        }
+
+        .section-map strong {
+            color: var(--cyan);
+            display: block;
+            font-size: 13px;
+            letter-spacing: .12em;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .section-map span {
+            color: var(--text);
+            font-weight: 800;
+        }
+
+        @media (max-width: 760px) {
+            body {
+                padding: 18px;
+            }
+
+            .topbar {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .viewer {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="wireframe-shell">
+        <section class="topbar">
+            <div>
+                <h1>Full UI Wireframe</h1>
+                <p>Smart Inventory & Office Supplies Requisition Portal</p>
+            </div>
+            <div class="badge">Premium Dashboard Design</div>
+        </section>
+
+        <section class="section-map" aria-label="Wireframe sections">
+            <article><strong>01</strong><span>Home / Landing Page</span></article>
+            <article><strong>02</strong><span>Login / Role Access</span></article>
+            <article><strong>03</strong><span>Admin Dashboard</span></article>
+            <article><strong>04</strong><span>Staff Dashboard</span></article>
+            <article><strong>05</strong><span>CRUD Table Pages</span></article>
+            <article><strong>06</strong><span>Item Image + Stock Form</span></article>
+            <article><strong>07</strong><span>Requisition Workflow</span></article>
+            <article><strong>08</strong><span>Add / Edit Form</span></article>
+            <article><strong>09</strong><span>Admin / Staff Profile</span></article>
+            <article><strong>10</strong><span>Responsive Mobile</span></article>
+        </section>
+
+        <section class="viewer">
+            <img src="img/smart-inventory-ui-wireframe.svg" alt="Full Smart Inventory UI wireframe">
+        </section>
+    </main>
+</body>
+</html>

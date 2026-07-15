@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2200" viewBox="0 0 1800 2200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="55%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <style>
+      .bg { fill: url(#bg); }
+      .panel { fill: rgba(15,23,42,.88); stroke: rgba(148,163,184,.28); stroke-width: 2; }
+      .panel2 { fill: rgba(30,41,59,.62); stroke: rgba(148,163,184,.22); stroke-width: 2; }
+      .ghost { fill: rgba(59,130,246,.12); stroke: rgba(59,130,246,.45); stroke-width: 2; }
+      .line { stroke: rgba(203,213,225,.58); stroke-width: 5; stroke-linecap: round; }
+      .thin { stroke: rgba(148,163,184,.38); stroke-width: 2; stroke-linecap: round; }
+      .cyan { stroke: #06B6D4; fill: none; stroke-width: 4; stroke-linecap: round; }
+      .accent { fill: url(#accent); }
+      .txt { fill: #FFFFFF; font-family: Inter, Segoe UI, Arial, sans-serif; font-weight: 800; }
+      .sub { fill: #CBD5E1; font-family: Inter, Segoe UI, Arial, sans-serif; font-weight: 600; }
+      .muted { fill: #94A3B8; font-family: Inter, Segoe UI, Arial, sans-serif; font-weight: 600; }
+      .label { fill: #E2E8F0; font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 20px; font-weight: 800; }
+      .small { fill: #CBD5E1; font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 15px; font-weight: 700; }
+      .tiny { fill: #94A3B8; font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 12px; font-weight: 700; }
+      .screenTitle { fill: #FFFFFF; font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 30px; font-weight: 900; }
+      .screenSub { fill: #A5F3FC; font-family: Inter, Segoe UI, Arial, sans-serif; font-size: 14px; font-weight: 900; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1800" height="2200"/>
+  <circle cx="1600" cy="130" r="210" fill="#3B82F6" opacity=".10"/>
+  <circle cx="170" cy="2050" r="260" fill="#8B5CF6" opacity=".10"/>
+  <path d="M0 210 C260 120 420 290 700 190 S1220 80 1800 170" fill="none" stroke="#06B6D4" opacity=".12" stroke-width="3"/>
+
+  <text x="70" y="76" class="txt" font-size="42">Smart Inventory UI Wireframe</text>
+  <text x="70" y="112" class="sub" font-size="20">Premium dashboard structure for Home, Login, Admin, Staff and CRUD modules</text>
+  <rect x="1340" y="52" width="390" height="54" rx="27" class="accent"/>
+  <text x="1385" y="87" class="txt" font-size="20">Dark/Light-ready layout system</text>
+
+  <!-- Home -->
+  <g transform="translate(70,160)">
+    <rect width="800" height="440" rx="28" class="panel"/>
+    <text x="32" y="48" class="screenSub">01 HOME / LANDING PAGE</text>
+    <rect x="32" y="74" width="736" height="54" rx="16" class="panel2"/>
+    <text x="58" y="108" class="label">SmartInventory</text>
+    <line x1="500" y1="101" x2="745" y2="101" class="line"/>
+    <rect x="32" y="158" width="342" height="38" rx="19" class="ghost"/>
+    <text x="54" y="183" class="small">Enterprise Inventory Solution</text>
+    <line x1="36" y1="235" x2="390" y2="235" class="line"/>
+    <line x1="36" y1="276" x2="330" y2="276" class="line"/>
+    <line x1="36" y1="317" x2="250" y2="317" class="line"/>
+    <line x1="40" y1="354" x2="340" y2="354" class="thin"/>
+    <rect x="36" y="382" width="128" height="38" rx="19" class="accent"/>
+    <rect x="178" y="382" width="128" height="38" rx="19" class="ghost"/>
+    <rect x="320" y="382" width="150" height="38" rx="19" class="ghost"/>
+    <rect x="500" y="160" width="250" height="250" rx="24" class="panel2"/>
+    <rect x="530" y="190" width="86" height="72" rx="18" class="ghost"/>
+    <rect x="636" y="190" width="86" height="72" rx="18" class="ghost"/>
+    <rect x="530" y="282" width="86" height="72" rx="18" class="ghost"/>
+    <rect x="636" y="282" width="86" height="72" rx="18" class="ghost"/>
+    <path d="M536 384 C585 340 620 410 665 374 S710 350 734 382" class="cyan"/>
+  </g>
+
+  <!-- Login -->
+  <g transform="translate(930,160)">
+    <rect width="800" height="440" rx="28" class="panel"/>
+    <text x="32" y="48" class="screenSub">02 LOGIN / ROLE ACCESS</text>
+    <circle cx="120" cy="170" r="46" class="ghost"/>
+    <circle cx="690" cy="145" r="42" class="ghost"/>
+    <rect x="170" y="72" width="460" height="330" rx="28" class="panel2"/>
+    <text x="220" y="125" class="small" fill="#22D3EE">SECURE ROLE ACCESS</text>
+    <line x1="220" y1="172" x2="530" y2="172" class="line"/>
+    <line x1="220" y1="208" x2="455" y2="208" class="line"/>
+    <line x1="220" y1="244" x2="560" y2="244" class="thin"/>
+    <rect x="220" y="274" width="360" height="46" rx="14" class="ghost"/>
+    <rect x="220" y="336" width="360" height="46" rx="14" class="accent"/>
+    <line x1="250" y1="418" x2="350" y2="418" class="thin"/>
+    <line x1="450" y1="418" x2="550" y2="418" class="thin"/>
+  </g>
+
+  <!-- Admin dashboard -->
+  <g transform="translate(70,660)">
+    <rect width="800" height="520" rx="28" class="panel"/>
+    <text x="32" y="48" class="screenSub">03 ADMIN DASHBOARD</text>
+    <rect x="32" y="78" width="160" height="402" rx="22" class="panel2"/>
+    <rect x="56" y="112" width="112" height="30" rx="15" class="accent"/>
+    <line x1="58" y1="176" x2="160" y2="176" class="thin"/>
+    <line x1="58" y1="216" x2="160" y2="216" class="thin"/>
+    <line x1="58" y1="256" x2="160" y2="256" class="thin"/>
+    <line x1="58" y1="296" x2="160" y2="296" class="thin"/>
+    <line x1="58" y1="336" x2="160" y2="336" class="thin"/>
+    <rect x="214" y="78" width="544" height="64" rx="18" class="panel2"/>
+    <rect x="232" y="96" width="260" height="28" rx="14" class="ghost"/>
+    <circle cx="705" cy="110" r="18" class="ghost"/>
+    <rect x="214" y="166" width="120" height="86" rx="18" class="ghost"/>
+    <rect x="350" y="166" width="120" height="86" rx="18" class="ghost"/>
+    <rect x="486" y="166" width="120" height="86" rx="18" class="ghost"/>
+    <rect x="622" y="166" width="136" height="86" rx="18" class="ghost"/>
+    <rect x="214" y="278" width="270" height="190" rx="18" class="panel2"/>
+    <path d="M236 420 C286 360 330 444 376 370 S438 330 462 392" class="cyan"/>
+    <rect x="508" y="278" width="250" height="190" rx="18" class="panel2"/>
+    <circle cx="586" cy="372" r="54" fill="none" stroke="#3B82F6" stroke-width="18"/>
+    <circle cx="586" cy="372" r="54" fill="none" stroke="#22C55E" stroke-width="18" stroke-dasharray="120 220"/>
+    <line x1="668" y1="340" x2="728" y2="340" class="thin"/>
+    <line x1="668" y1="372" x2="728" y2="372" class="thin"/>
+    <line x1="668" y1="404" x2="728" y2="404" class="thin"/>
+  </g>
+
+  <!-- Staff dashboard -->
+  <g transform="translate(930,660)">
+    <rect width="800" height="520" rx="28" class="panel"/>
+    <text x="32" y="48" class="screenSub">04 STAFF DASHBOARD</text>
+    <rect x="32" y="78" width="160" height="402" rx="22" class="panel2"/>
+    <rect x="56" y="112" width="112" height="30" rx="15" class="accent"/>
+    <line x1="58" y1="176" x2="160" y2="176" class="thin"/>
+    <line x1="58" y1="216" x2="160" y2="216" class="thin"/>
+    <line x1="58" y1="256" x2="160" y2="256" class="thin"/>
+    <line x1="58" y1="296" x2="160" y2="296" class="thin"/>
+    <rect x="214" y="78" width="544" height="64" rx="18" class="panel2"/>
+    <rect x="232" y="96" width="260" height="28" rx="14" class="ghost"/>
+    <rect x="214" y="166" width="168" height="86" rx="18" class="ghost"/>
+    <rect x="400" y="166" width="168" height="86" rx="18" class="ghost"/>
+    <rect x="590" y="166" width="168" height="86" rx="18" class="ghost"/>
+    <rect x="214" y="278" width="544" height="190" rx="18" class="panel2"/>
+    <line x1="246" y1="324" x2="720" y2="324" class="thin"/>
+    <line x1="246" y1="366" x2="720" y2="366" class="thin"/>
+    <line x1="246" y1="408" x2="720" y2="408" class="thin"/>
+    <rect x="600" y="318" width="88" height="24" rx="12" fill="#F59E0B" opacity=".85"/>
+    <rect x="600" y="360" width="88" height="24" rx="12" fill="#22C55E" opacity=".85"/>
+    <rect x="600" y="402" width="88" height="24" rx="12" fill="#EF4444" opacity=".85"/>
+  </g>
+
+  <!-- CRUD table -->
+  <g transform="translate(70,1240)">
+    <rect width="520" height="410" rx="28" class="panel"/>
+    <text x="32" y="48" class="screenSub">05 ENTITY LIST / CRUD TABLE</text>
+    <text x="32" y="88" class="screenTitle">Category / Staff / Vendor</text>
+    <rect x="32" y="116" width="456" height="56" rx="18" class="panel2"/>
+    <rect x="52" y="132" width="210" height="24" rx="12" class="ghost"/>
+    <rect x="376" y="128" width="92" height="30" rx="15" class="accent"/>
+    <rect x="32" y="198" width="456" height="172" rx="18" class="panel2"/>
+    <line x1="58" y1="236" x2="462" y2="236" class="thin"/>
+    <line x1="58" y1="276" x2="462" y2="276" class="thin"/>
+    <line x1="58" y1="316" x2="462" y2="316" class="thin"/>
+    <rect x="380" y="254" width="34" height="24" rx="8" fill="#3B82F6"/>
+    <rect x="424" y="254" width="34" height="24" rx="8" fill="#EF4444"/>
+  </g>
+
+  <!-- Item management -->
+  <g transform="translate(640,1240)">
+    <rect width="520" height="410" rx="28" class="panel"/>
+    <text x="32" y="48" class="screenSub">06 ITEM MANAGEMENT</text>
+    <text x="32" y="88" class="screenTitle">Image + Stock Form</text>
+    <rect x="32" y="120" width="150" height="150" rx="22" class="ghost"/>
+    <path d="M62 228 L96 190 L122 216 L144 186 L166 228 Z" class="cyan"/>
+    <rect x="210" y="120" width="278" height="44" rx="14" class="panel2"/>
+    <rect x="210" y="182" width="278" height="44" rx="14" class="panel2"/>
+    <rect x="210" y="244" width="126" height="44" rx="14" class="panel2"/>
+    <rect x="362" y="244" width="126" height="44" rx="14" class="panel2"/>
+    <rect x="32" y="312" width="456" height="52" rx="18" class="accent"/>
+  </g>
+
+  <!-- Requisition flow -->
+  <g transform="translate(1210,1240)">
+    <rect width="520" height="410" rx="28" class="panel"/>
+    <text x="32" y="48" class="screenSub">07 REQUISITION WORKFLOW</text>
+    <text x="32" y="88" class="screenTitle">Request + Approval</text>
+    <circle cx="70" cy="144" r="18" class="accent"/>
+    <line x1="70" y1="166" x2="70" y2="322" class="thin"/>
+    <circle cx="70" cy="214" r="18" fill="#F59E0B"/>
+    <circle cx="70" cy="284" r="18" fill="#22C55E"/>
+    <line x1="112" y1="144" x2="430" y2="144" class="line"/>
+    <line x1="112" y1="214" x2="430" y2="214" class="line"/>
+    <line x1="112" y1="284" x2="430" y2="284" class="line"/>
+    <rect x="112" y="326" width="140" height="42" rx="21" fill="#22C55E"/>
+    <rect x="272" y="326" width="140" height="42" rx="21" fill="#EF4444"/>
+  </g>
+
+  <!-- Form/edit -->
+  <g transform="translate(70,1710)">
+    <rect width="520" height="360" rx="28" class="panel"/>
+    <text x="32" y="48" class="screenSub">08 ADD / EDIT FORM</text>
+    <rect x="34" y="84" width="452" height="230" rx="22" class="panel2"/>
+    <rect x="62" y="116" width="398" height="42" rx="14" class="ghost"/>
+    <rect x="62" y="176" width="398" height="42" rx="14" class="ghost"/>
+    <rect x="62" y="236" width="188" height="42" rx="14" class="ghost"/>
+    <rect x="272" y="236" width="188" height="42" rx="14" class="ghost"/>
+    <rect x="34" y="328" width="130" height="36" rx="18" class="accent"/>
+  </g>
+
+  <!-- Profile -->
+  <g transform="translate(640,1710)">
+    <rect width="520" height="360" rx="28" class="panel"/>
+    <text x="32" y="48" class="screenSub">09 ADMIN / STAFF PROFILE</text>
+    <circle cx="120" cy="150" r="62" class="ghost"/>
+    <rect x="210" y="102" width="250" height="30" rx="15" class="line"/>
+    <line x1="210" y1="164" x2="430" y2="164" class="thin"/>
+    <line x1="210" y1="204" x2="430" y2="204" class="thin"/>
+    <rect x="210" y="250" width="160" height="42" rx="21" class="accent"/>
+  </g>
+
+  <!-- Mobile -->
+  <g transform="translate(1210,1710)">
+    <rect width="520" height="360" rx="28" class="panel"/>
+    <text x="32" y="48" class="screenSub">10 RESPONSIVE MOBILE</text>
+    <rect x="176" y="74" width="170" height="260" rx="30" class="panel2"/>
+    <rect x="198" y="104" width="126" height="30" rx="15" class="accent"/>
+    <rect x="198" y="154" width="126" height="48" rx="14" class="ghost"/>
+    <rect x="198" y="216" width="126" height="48" rx="14" class="ghost"/>
+    <line x1="218" y1="294" x2="304" y2="294" class="thin"/>
+    <rect x="54" y="116" width="96" height="180" rx="18" class="panel2"/>
+    <line x1="72" y1="150" x2="132" y2="150" class="thin"/>
+    <line x1="72" y1="190" x2="132" y2="190" class="thin"/>
+    <line x1="72" y1="230" x2="132" y2="230" class="thin"/>
+  </g>
+
+  <text x="70" y="2150" class="muted" font-size="20">Modules covered: Home, Login, Admin Dashboard, Staff Dashboard, Category, Item, Requisition, Requisition Item, Stock Transaction, Vendor, Admin/Staff Profile.</text>
+</svg>
